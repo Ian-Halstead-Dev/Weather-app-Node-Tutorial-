@@ -8,6 +8,7 @@ const forecast = require('./utils/forecast');
 
 //Creates the app obj and it is used to setup the server
 const app = express();
+const port = process.env.PORT || 3000;
 
 //Define Paths for Express config
 const publicDirPath = path.join(__dirname, '../public');
@@ -100,7 +101,6 @@ app.get('*', (req, res) => {
 });
 
 //Run server
-const port = 3000;
 app.listen(port, () => {
 	console.log(`Server is up on port ${port}`);
 });
