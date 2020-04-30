@@ -20,7 +20,17 @@ weatherForm.addEventListener('submit', (e) => {
 			}
 			else {
 				msg1.innerText = 'The weather right now in ' + data.location;
-				msg2.innerText = 'It is ' + data.temperature + ' degrees but it feels like ' + data.feelsLike;
+				msg2.innerText =
+					'It is ' +
+					data.weather_descriptions[0] +
+					' and ' +
+					data.temperature +
+					' degrees but it feels like ' +
+					data.feelsLike +
+					' with ' +
+					data.humidity +
+					'% humidity';
+				console.log('data.humidity :>> ', data.humidity);
 			}
 		});
 	});

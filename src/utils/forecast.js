@@ -13,7 +13,12 @@ const forecast = (latitude, longitude, callback) => {
 		}
 		else {
 			data = body.current;
-			callback(undefined, { temperature: data.temperature, feelsLike: data.feelslike });
+			callback(undefined, {
+				temperature: data.temperature,
+				feelsLike: data.feelslike,
+				weather_descriptions: data.weather_descriptions,
+				humidity: data.humidity
+			});
 		}
 	});
 };
