@@ -16,7 +16,8 @@ weatherForm.addEventListener('submit', (e) => {
 	fetch(`/weather?address=${location}`).then((response) => {
 		response.json().then((data) => {
 			if (data.error) {
-				msg1.innerText = 'Error: ' + data.error;
+				msg1.innerText = '';
+				alertHTML('Error: ', data.error);
 			}
 			else {
 				msg1.innerText = 'The weather right now in ' + data.location;

@@ -1,0 +1,36 @@
+.alert-container {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .4);
+  align-items: center;
+  justify-content: center;
+
+  .alert {
+    display: flex;
+    background-color: #eee;
+    flex-direction: column;
+    width: 20%;
+    padding: 16px;
+    box-shadow: 5px 10px 30px 5px rgba(0, 0, 0, .4);
+
+    h1 {
+      margin: 0;
+      padding-bottom: 5%;
+    }
+
+    p {
+      padding-bottom: 10%;
+    }
+
+    #close-alert {
+      background-color: rgba(30, 30, 30, .45);
+      width: fit-content;
+      padding: 4% 3%;
+      cursor: pointer;
+    }
+  }
+}
