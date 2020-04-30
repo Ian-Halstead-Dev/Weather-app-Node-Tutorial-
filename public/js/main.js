@@ -30,7 +30,6 @@ weatherForm.addEventListener('submit', (e) => {
 					' with ' +
 					data.humidity +
 					'% humidity';
-				console.log('data.humidity :>> ', data.humidity);
 			}
 		});
 	});
