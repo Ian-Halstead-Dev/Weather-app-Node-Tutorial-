@@ -15,7 +15,7 @@ const alertHTML = (title, message) => {
 	alertMessage.innerText = message;
 	alertTitle.innerText = title;
 	alertContainer.style.display = 'flex';
-	alertTimeout = window.setTimeout(() => {
-		alertContainer.style.display = 'none';
-	}, 5000);
+	// alertTimeout = window.setTimeout(() => {
+	// 	alertContainer.style.display = 'none';
+	// }, 5000);
 };
